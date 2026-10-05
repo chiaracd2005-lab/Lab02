@@ -1,6 +1,6 @@
 def carica_da_file(file_path):
     """Carica le foto dal file, creando un nuovo anno ogni volta che compare per la prima volta"""
-    # TODO
+
     anni={} #inizializzo un dizionario vuoto, avrà come chiavi gli anni e come valori le liste di foto scattate in quell'anno
     with open(file_path, mode='r', encoding='utf-8') as f:
         reader=csv.DictReader(f) #crea un lettore che interpreta la prima riga del file csv come intestazione delle colonne, ogni riga successiva verrà restituita come dizionario in cui le chiavi sono i nomi delle colonne
